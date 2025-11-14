@@ -23,3 +23,4 @@ function Card2({na, cl, ex, gr}){
 }
 
 export default Card2;
+

@@ -1,0 +1,42 @@
+.card_cont{
+    border-radius:10px;
+    background-color: white;
+    color:black;
+    padding:30px;
+    width:320px;
+}
+
+.card_cont h2{
+    text-align: start;
+}
+
+.addButton{
+    background-color:#5e578c;
+    color: white;
+}
+
+.part{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.part h1{
+    margin-top: 0%;
+    padding-top: 0%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+
+    font-size: 30px;
+}
+
+.part p{
+    text-align: left;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+
+.img{
+    background-color:#5e578c;
+}
