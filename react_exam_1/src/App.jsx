@@ -5,8 +5,6 @@ import './App.css'
 import Card from './comp/card.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <Card na='Nike Running Shoe' p='69.99'/>
