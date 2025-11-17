@@ -2,10 +2,10 @@ import { useState } from 'react'
 import React from 'react'
 import styles from './card.module.css'
 
-function Card(i){
-    const [img, setImg] = useState(i);
-    const [name, setName] = useState("Nike Air Max 270");
-    const [price, setPrice] = useState(139.99);
+function Card(na, p){
+    const [img, setImg] = useState('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx5rRfKjViZ_drNEJBOvW04s_cZtAoT8jC3kY43ebx58Cn2k0g:https://source.roboflow.com/sSaf7U5XWabfyJWH7ZuZTnMiQdw2/1M1SWs7dVZgX9CMetrSE/original.jpg&s');
+    const [name, setName] = useState(n);
+    const [price, setPrice] = useState(p);
 
     return(
         <>
@@ -14,9 +14,9 @@ function Card(i){
             <div className={styles.card_cont}>
                 <h2> {name} </h2>
 
-                
+                <div className={styles.line}><h3 className={styles.but} id={styles.b1}> EU38 </h3> <h3 className={styles.but}> BLACK/WHITE</h3> </div>
 
-                <p> Crossing hardwood comfort with off-court flair. '80s-inspired construction, bold details and nothin'-but-net style. </p>
+                <p className='extra'> Crossing hardwood comfort with off-court flair. '80s-inspired construction, bold details and nothin'-but-net style. </p>
 
                 <div className={styles.part}>
                     <div className={styles.leftPart}>
