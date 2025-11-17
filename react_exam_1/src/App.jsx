@@ -7,7 +7,7 @@ import Card from './comp/card.jsx'
 function App() {
   return (
     <>
-      <Card na='Nike Running Shoe' p='69.99'/>
+      <Card/>
     </>
   )
 }

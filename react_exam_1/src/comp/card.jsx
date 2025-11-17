@@ -2,9 +2,9 @@ import { useState } from 'react'
 import React from 'react'
 import styles from './card.module.css'
 
-function Card(na, p){
+function Card(p){
     const [img, setImg] = useState('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx5rRfKjViZ_drNEJBOvW04s_cZtAoT8jC3kY43ebx58Cn2k0g:https://source.roboflow.com/sSaf7U5XWabfyJWH7ZuZTnMiQdw2/1M1SWs7dVZgX9CMetrSE/original.jpg&s');
-    const [price, setPrice] = useState(p);
+    const [price, setPrice] = useState(69.99);
     const [name, setName] = useState('Nike Running Shoe');
 
     return(
