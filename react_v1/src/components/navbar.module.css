@@ -1,0 +1,21 @@
+nav{
+    background-color: rgb(0, 162, 255);
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    
+}
+
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    display: flex;
+    align-content: center;
+}
+
+li{
+    padding:4px;
+}
