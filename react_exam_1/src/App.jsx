@@ -5,10 +5,12 @@ import './App.css'
 import Card from './comp/card.jsx'
 import SecretMessage from './comp/SecretMessage.jsx'
 import Challenege from './comp/Challenege.jsx'
+import ProfileCard from './comp/ProfileCard.jsx'
 
 function App() {
   return (
     <>
+      <ProfileCard/>
       <Challenege/>
       <SecretMessage/>
     </>

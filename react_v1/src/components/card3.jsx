@@ -1,7 +1,7 @@
-import styles from "./card3.mod.css"
-function card3(props){
+import styles from "./card3.module.css";
+function Card3(props){
     return(
-        <div className="card">
+        <div className={styles.card}>
             <img src={props.src} alt={props.alt}/>
             <p> {props.name} </p>
             <p> {props.desc} </p>
@@ -10,4 +10,4 @@ function card3(props){
     )
 }
 
-export default card3
+export default Card3

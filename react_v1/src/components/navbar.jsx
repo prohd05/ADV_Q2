@@ -1,4 +1,5 @@
 import styles from './navbar.module.css'
+import { useState } from "react";
 import { House, UserRoundPen, FolderKanban, Contact } from 'lucide-react';
 
 
