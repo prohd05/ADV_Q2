@@ -13,26 +13,23 @@ function Form() {
 
     const submitFormHandler = (event) => {
         event.preventDefault();
-        emailCheck();
-    };
 
-    function emailCheck(){
-        if (email.contain("@")){
-            pwCheck();
+        setEc("")
+        setPw("")
+        
+    if (!email.includes("@") || password.length < 6){
+         if (!email.includes("@")) {
+            setEc("Email is invalid");
         }
-        else{
-            return (<> Needs to be a valid Email </>)
-        }
-    } 
 
-    function pwCheck(){
-        if (password.length()>6){
-            console.log("Email: " + email + " Password: " + password);
-        }
-        else{
-            return (<> Password needs to be greater than 6 characters </>)
+        if (password.length < 6) {
+            setPw("Password must be longer than 6 characters");
         }
     }
+    else{
+        console.log("Email: " + email + " Password:" + password);
+    }
+    };
 
 
     return (
@@ -57,15 +54,14 @@ function Form() {
                 <label className={styles.head}> Email </label> <br/>
                 <input type="email" placeholder="mail@abc.com" name="email" onChange={(event) => setEmail(event.target.value)} />{" "};
                 <br/> 
-                {ec}
+                <p className={styles.error}> {ec} </p>
                 <br/> <br/>
 
                 <label className={styles.head}> Password </label> <br/>
                 <input type="password" placeholder="*****************" name="password" onChange={(event) => setPassword(event.target.value)} />{" "}
                 <br/>
                 <div id={styles.bottom}> <div id={styles.check}> <input type="checkbox" id={styles.cb}/><p id={styles.rm}> Remember Me </p> </div> <p id={styles.fp}> Forgot Password? </p> </div>
-                <br/>
-                {pw}
+                <p className={styles.error}> {pw} </p>
                 <br/> <br/>
 
                 <button type="submit" onClick={submitFormHandler}> Login </button>

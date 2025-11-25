@@ -1,4 +1,4 @@
-head{
+    head{
     font-size:14px;
 }
 
@@ -7,7 +7,7 @@ body{
 }
 
 form{
-    border:10px white solid;
+    border:30px white solid;
     border-radius: 34px;
     width:1920px;
     display:flex;
@@ -143,4 +143,9 @@ p{
 
 #check{
     display: flex;
+}
+
+.error{
+    color: red;
+    font-size: 12px;
 }
