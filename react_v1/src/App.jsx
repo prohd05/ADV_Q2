@@ -16,12 +16,11 @@ function App() {
     <div className='cardContainer'>
      <Navbar/>
     <Toggle/>
-    
+    <Form/>
 
     <h1> This is my first day with React </h1>
     <p> Merques Enoe </p>
     
-
     <Card/>
     <Card2 na={"I.S."} cl={"APFIT"} ex={"react"} gr={78}/>
     <Card2 na={"I.V."} cl={"APFIT"} ex={"react"} gr={80}/>
