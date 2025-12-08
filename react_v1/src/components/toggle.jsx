@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 function Toggle(){
-    const [toggled, setToggled] = useState(false);
+    const [toggled, setToggled] = useState(true);
     const changeToggle=()=>{setToggled(!toggled)}
 
     return(
