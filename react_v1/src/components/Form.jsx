@@ -54,8 +54,8 @@ function Form() {
                 <label className={styles.head}> Email </label> <br/>
                 <input type="email" placeholder="mail@abc.com" name="email" onChange={(event) => setEmail(event.target.value)} />{" "};
                 <br/> 
-                <p className={styles.error}> {ec} </p>
-                <br/>
+                {ec}
+                <br/> <br/>
 
                 <label className={styles.head}> Password </label> <br/>
                 <input type="password" placeholder="*****************" name="password" onChange={(event) => setPassword(event.target.value)} />{" "}
