@@ -12,14 +12,19 @@ import BookDetails from './pages/BookDetails.jsx'
 import AddBook from './pages/AddBook.jsx'
 import Settings from './pages/Settings.jsx'
 
+import Signup from './pages/Signup.jsx'
+import Login from './pages/Login.jsx'
+
 import ThemeContext from './context/ThemeContext.jsx'
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
 
   return (
     <>
-    
-    <Navbar/>
+
+    <Login/>
 
     <BookCard
       idf={1} ti={"The React Journey"} au={"Alex Morgan"} gen={"Technology"} desc={"An introduction to React concepts including components, props, state, and hooks."} av={true}

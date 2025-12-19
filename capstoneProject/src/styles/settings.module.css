@@ -1,0 +1,14 @@
+
+
+.accsub{
+    display: flex;
+}
+
+.accsub button{
+    color:#EAC52D;
+    background-color: #733388;
+}
+
+.set{
+    display: flex;
+}
